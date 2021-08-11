@@ -47,6 +47,7 @@ public class VectorProceso {
 			k++;
 			}
 			}
+			
 			public static void printX(int X[]) {
 			int n = X.length;
 			for (int i=0; i<n; ++i) {

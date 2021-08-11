@@ -1,10 +1,12 @@
 package grupal;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MainMergeShort {
 
 	public static void main(String[]args) {
+		
 		
 		VectorProceso mergeSort = new VectorProceso();
 		Scanner teclado = new Scanner(System.in);
@@ -26,6 +28,12 @@ public class MainMergeShort {
 		System.out.println("Valores ordenados son: ");
 		VectorProceso.sort(X,0,N-1);
 		VectorProceso.printX(X);
+		
+		System.out.println(" Vector ordenado por Java ");
+		Arrays.sort(X);
+		System.out.println("El vector antes de ordenar: "+ Arrays.toString(X));
+		
+		System.out.println("El vector despues de ordenar: "+ Arrays.toString(X));
 		}
 		}
 		
