@@ -6,7 +6,6 @@ public class Estudiante implements Comparable <Estudiante> {
 	private int numeroLista;
 	private int edad;
 	
-	
 	// new Estudiante()
 	public Estudiante() {
 		
