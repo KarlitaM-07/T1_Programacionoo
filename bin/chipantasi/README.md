@@ -1,0 +1,2 @@
+# prueba1
+Crear un programa que solicite ingresar un número (solo positivos), y así seguirá solicitando ingresar un número hasta que se ingrese el número cero (0), cuando se ingrese el numero cero, ya no solicitará más números y en ese momento el programa debe imprimir la suma y el promedio de los números ingresados hasta ese momento. Adicional deberá imprimir la cantidad de números ingresados por el usuario.
