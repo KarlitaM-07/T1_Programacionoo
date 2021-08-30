@@ -1,47 +1,92 @@
 package tablero.tarea;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class MainAjedres {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner entrada =new Scanner(System.in);
+		//
+	
+		Ajedrez peonrojo= new Ajedrez();
+		peonrojo.setPeonRojo();
 		
-		String [][] tablero = new String [8][8];
+		Ajedrez torrerojo= new Ajedrez();
+		torrerojo.setTorre("Rojo");
 		
-		for (int i=0; i<8; i++) {
-			
-			for (int j = 0; j<8; j++) {
-				tablero[i][j]="p";
-				
-			} int j = 0;
-			if ((i==0||i==7) && (j==0||j==7)){
-				tablero[i][j]="T";
-				
-			}else if ((i==1||i==6) && (j==0||j==7)){
-				tablero [i][j]="C";
-				
-			}else if ((i==2||i==5) && (j==0||j==7)){
-				tablero[i][j]="A";
-				
-			}else if ((i==3) && (j==0||j==7)){
-				tablero[i][j]="D";
-				
-			}else if (i==4 && (j==0||j==7)) {
-				tablero[i][j]="R";
-			}
-				
-		}
+		Ajedrez caballorojo= new Ajedrez();
+		caballorojo.setCaballo("Rojo");
+		
+		Ajedrez alfilrojo= new Ajedrez();
+		alfilrojo.setAlfil("Rojo");
+		
+		Ajedrez reyrojo= new Ajedrez();
+		reyrojo.setRey();
+		
+		Ajedrez damarojo= new Ajedrez();
+		damarojo.setDama("Rojo");
+		
+		Ajedrez peonazul= new Ajedrez();
+		peonrojo.setPeonAzul();
+		
+		Ajedrez torreazul= new Ajedrez();
+		torrerojo.setTorre("Azul");
+		
+		Ajedrez caballoazul= new Ajedrez();
+		caballorojo.setCaballo("Rojo");
+		
+		Ajedrez alfilazul= new Ajedrez();
+		alfilrojo.setAlfil("Azul");
+		
+		Ajedrez reyazul= new Ajedrez();
+		reyrojo.setRey();
+		
+		Ajedrez damaazul= new Ajedrez();
+		damarojo.setDama("Azul");
 		
 	
-	for (int i = 0; i < 8; i++) {
-		for (int j = 0; j < 8; j++)
-			System.out.println(tablero[i][j]+ "\t");
+	Ajedrez tablero [][]=new Ajedrez[8][8];
+	
+		tablero [1][0]=peonrojo;
+		tablero [1][1]=peonrojo;
+		tablero [1][2]=peonrojo;
+		tablero [1][3]=peonrojo;
+		tablero [1][4]=peonrojo;
+		tablero [1][5]=peonrojo;
+		tablero [1][6]=peonrojo;
+		tablero [1][7]=peonrojo;
 		
-		System.out.println();
 		
-	}
+		tablero [0][0]=torrerojo;
+		tablero [0][1]=torrerojo;
+		tablero [0][2]=caballorojo;
+		tablero [0][3]=caballorojo;
+		tablero [0][4]=reyrojo;
+		tablero [0][5]=reyrojo;
+		tablero [0][6]=damarojo;
+		tablero [0][7]=damarojo;
+		
+		
+		tablero [7][0]=torreazul;
+		tablero [7][1]=torreazul;
+		tablero [7][2]=caballoazul;
+		tablero [7][3]=caballoazul;
+		tablero [7][4]=reyazul;
+		tablero [7][5]=reyazul;
+		tablero [7][6]=damaazul;
+		tablero [7][7]=damaazul;
+		
+		
+		tablero [6][0]=peonazul;
+		tablero [6][1]=peonazul;
+		tablero [6][2]=peonazul;
+		tablero [6][3]=peonazul;
+		tablero [6][4]=peonazul;
+		tablero [6][5]=peonazul;
+		tablero [6][6]=peonazul;
+		tablero [6][7]=peonazul;	 
 	}
 }
+
+
 
